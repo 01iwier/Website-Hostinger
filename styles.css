@@ -4,8 +4,22 @@ html {
 
 body {
     font-family: 'Consolas', monospace;
-    font-size: 1em;
+    font-size: 2vh;
     color: #7689de;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 18vh;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 a {
@@ -28,35 +42,10 @@ h3:hover {
     transform: scale(1.1);
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    height: 80vh;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-}
-
-@media (max-width: 600px) {
-    .container {
-        transform: scale(0.75);
-        transform-origin: center;
-    }
-}
-
-@media (min-width: 600px) {
-    .container {
-        transform: scale(1.2);
-        transform-origin: center;
-    }
-}
-
 .links {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
+    margin: 1vh;
 }
 
 .link {
@@ -64,12 +53,12 @@ h3:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 1vh;
 }
 
 .icon {
-    width: 40px;
-    height: 40px;
+    width: 4vh;
+    height: 4vh;
     filter: invert(45%) sepia(100%) saturate(600%) hue-rotate(199deg) brightness(95%) contrast(100%);
     transition: all 0.3s ease-in-out;
 }
@@ -79,12 +68,12 @@ h3:hover {
 }
 
 .logo {
-    width: 175px;
-    height: 175px;
+    max-width: 25vh;
+    height: auto;
 }
 
 .sub {
-    font-size: 0.9em;
+    font-size: 2vh;
     color: #7689de;
 }
 
@@ -96,7 +85,7 @@ h3:hover {
     flex-wrap: wrap;
 }
 
-.text {
+.animated-text {
     font-size: 2.75em;
     border-right: 2px solid;
     letter-spacing: 2px;
